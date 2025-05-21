@@ -49,7 +49,7 @@
   }
 
   .video-item video {
-    width: 75%;
+    width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
@@ -77,12 +77,6 @@
   }
 
 </style>
-
-
-
-
-
-
 
   <meta charset="utf-8">
 
@@ -121,7 +115,6 @@
   <title>KungfuBot</title>
 </head>
 <body>
-
 
 <section class="hero">
   <div class="hero-body">
@@ -164,7 +157,7 @@
             <div class="publication-links">
 
               <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2504.14305"
+                <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -172,7 +165,6 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
               <span class="link-block">
                 <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
@@ -195,19 +187,19 @@
 <section class="section">
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-          <video src="./static/videos/eng_temp.mp4"  autoplay loop playsinline controls width="75%"></video>
+        <h2 class="title is-2">Video</h2>
+          <video src="./static/videos/main.mp4"  autoplay  muted loop playsinline controls width="30%"></video>
       </div>
-    </div> -->
+    </div>
 
 
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Humanoid robots are promising to acquire various skills by imitating human behaviors. However, existing algorithms are only capable of tracking smooth, low-speed human motions, even with delicate reward and curriculum design. This paper presents a physics-based humanoid control framework, aiming to master highly-dynamic human behaviors such as Kungfu and dancing through multi-steps motion processing and adaptive motion tracking. For motion processing, we design a pipeline to extract, filter out, correct, and retarget motions, while ensuring compliance with physical constraints to the maximum extent. For motion imitation, we formulate a bi-level optimization problem to dynamically adjust the tracking accuracy tolerance based on the current tracking error, creating an adaptive curriculum mechanism. We further construct an asymmetric actor-critic framework for policy training. In experiments, we train whole-body control policies to imitate a set of highly-dynamic motions. Our method achieves significantly lower tracking errors than existing approaches and is successfully deployed on the Unitree G1 robot, demonstrating stable and expressive behaviors.
@@ -234,95 +226,131 @@
       </div> 
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-          <h2 class="title is-3">Real World Experiments</h2>
+          <h2 class="title is-2">Real World Experiments</h2>
         </div>
         <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <!-- <div class="column is-four-fifths"> -->
           <div class="grid-container" style="
             display: grid;
-            grid-template-columns: repeat(2, 1fr);  /* 改为2列 */
+            grid-template-columns: repeat(3, 1fr);  /* 改为2列 */
             gap: 20px;  /* 增加间距 */
             justify-items: center;  /* 水平居中 */
             align-items: center;  /* 垂直居中 */
           ">
-
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">360-degree spin</div>
-          <video src="./static/videos/360 spin.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Back Kick</div>
-          <video src="./static/videos/back kick.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Dance</div>
-          <video src="./static/videos/dance.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Bruce Lee's pose</div>
-          <video src="./static/videos/BruceLee.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Fighting combo</div>
-          <video src="./static/videos/fighting combo.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Front kick</div>
-          <video src="./static/videos/front kick.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Hooks punch</div>
-          <video src="./static/videos/hooks punch.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Horse stance pose</div>
-          <video src="./static/videos/horse stance pose.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Horse stance punch</div>
-          <video src="./static/videos/horse stance punch.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
-          <div class="caption">Jabs punch</div>
-          <video src="./static/videos/Jabs punch.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
-        </div>
-        <div class="video-item" style="width: 75%;">
+        
+        <div class="video-item" style="width: 100%;">
           <div class="caption">Jump kick</div>
-          <video src="./static/videos/Jump kick.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
+          <video src="./static/videos/Jump kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
-        <div class="video-item" style="width: 75%;">
+        <div class="video-item" style="width: 100%;">
           <div class="caption">Roundhouse kick</div>
-          <video src="./static/videos/roundhouse kick.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
+          <video src="./static/videos/roundhouse kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
-        <div class="video-item" style="width: 75%;">
+        <div class="video-item" style="width: 100%;">
           <div class="caption">Side kick</div>
-          <video src="./static/videos/side kick.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
+          <video src="./static/videos/side kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
-        <div class="video-item" style="width: 75%;">
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Front kick</div>
+          <video src="./static/videos/front kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Back Kick</div>
+          <video src="./static/videos/back kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+        
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">360-degree spin</div>
+          <video src="./static/videos/360 spin.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Dance</div>
+          <video src="./static/videos/dance.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Bruce Lee's pose</div>
+          <video src="./static/videos/BruceLee.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Fighting combo</div>
+          <video src="./static/videos/fighting combo.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+        
+        
+        
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Horse stance punch</div>
+          <video src="./static/videos/horse stance punch.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Hooks punch</div>
+          <video src="./static/videos/hooks punch.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Jabs punch</div>
+          <video src="./static/videos/Jabs punch.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+
+        <div class="video-item" style="width: 100%;">
+          <div class="caption">Horse stance pose</div>
+          <video src="./static/videos/horse stance pose.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
+        </div>
+        
+        <div class="video-item" style="width: 100%;">
           <div class="caption">Stretch leg</div>
-          <video src="./static/videos/Stretch leg.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
+          <video src="./static/videos/Stretch leg.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
-         <div class="video-item" style="width: 75%;">
+
+        <div class="video-item" style="width: 100%;">
           <div class="caption">Tai Chi</div>
-          <video src="./static/videos/Tai Chi.mp4" autoplay muted loop playsinline controls style="width: 75%;"></video>
+          <video src="./static/videos/Tai Chi.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
+        
       </div>
       
       <!-- </div>  -->
     </div>
     <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-2">Results</h2>
+          <h2 class="title is-2">Experiment Results</h2>
+          <h2 class="title is-4">Main Results</h2>
           <p style="text-align: left;">
-            
+          Main results comparing different methods across difficulty levels. PBHC consistently
+          outperforms deployable baselines and approaches oracle-level performance. Results are reported as
+          mean ±one standard deviation. Bold indicates methods within one standard deviation of the best
+          result, excluding MaskedMimic.
           </p>
           <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 150%; max-height: 600px;" src="./static/images/xx.png" alt="图片2">
+          <img style="max-width: 150%; max-height: 600px;" src="./static/images/result1.jpg" alt="图片2">
+          </div>
+          <br>
+          <h2 class="title is-4">Ablation on Adaptive Motion Tracking</h2>
+          <p style="text-align: left;">
+            Ablation study comparing the adaptive motion tracking mechanism with fixed tracking
+factor variants. The adaptive mechanism consistently achieves near-optimal performance across all
+motions, whereas fixed variants exhibit varying performance depending on motions.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+          <img style="max-width: 150%; max-height: 600px;" src="./static/images/result2.jpg" alt="图片2">
+          </div>
+
+          <br>
+          <h2 class="title is-4">Tracking Performance Comparison between Sim and Real</h2>
+          <p style="text-align: left;">
+            Ablation study comparing the adaptive motion tracking mechanism with fixed tracking
+factor variants. The adaptive mechanism consistently achieves near-optimal performance across all
+motions, whereas fixed variants exhibit varying performance depending on motions.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+          <img style="max-width: 150%; max-height: 600px;" src="./static/images/result3.jpg" alt="图片2">
           </div>
           
         </div>
